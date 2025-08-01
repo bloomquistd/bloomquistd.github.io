@@ -1,0 +1,60 @@
+Form Code,Form Name,Received,Approved,Denied,Pending,Category Code,Form ID,Category Name
+I-129F,Petition for Alien Fiancé(e),10938,18586,3406,30137,1,1,Family Based
+I-130,Petition for Alien Relative,272351,175572,18693,2109145,1,2,Family Based
+I-6007,Petition to Classify Orphan as an Immediate Relative,189,181,46,561,1,3,Family Based
+I-601A,Application for Provisional Unlawful Presence Waiver,8897,16832,2841,130009,1,4,Family Based
+I-751,Petition to Remove Conditions on Residence,30463,29033,1488,248868,1,5,Family Based
+I-8008,Petition to Classify Convention Adoptee as an Immediate Relative,576,653,30,491,1,6,Family Based
+I-129,Petition for a Nonimmigrant Worker,123587,131945,19322,56871,2,7,Employment Based
+I-140,Immigrant Petition for Alien Workers,55567,42958,5267,78754,2,8,Employment Based
+I-5269,Immigrant Petition by Alien Investor (Legacy),0,1443,431,6666,2,9,Employment Based
+I-526,Immigrant Petition by Standalone Investor,69,10,0,267,2,10,Employment Based
+I-526E,Immigrant Petition by Regional Center Investor,1810,0,0,3672,2,11,Employment Based
+I-765,Application for Employment Authorization (Asylum),431297,382765,55449,341498,2,12,Employment Based
+I-765,Application for Employment Authorization (Adjustment Of Status),212389,188272,39059,304587,2,13,Employment Based
+I-765,Application for Employment Authorization (DACA),81260,83339,713,169214,2,14,Employment Based
+I-765,Application for Employment Authorization (All Other),567598,562253,44059,813742,2,15,Employment Based
+I-829,Petition by Investor to Remove Conditions on Permanent Resident Status,237,1868,70,7367,2,16,Employment Based
+I-92410,Application For Regional Center Designation Under the Immigrant Investor Program,0,0,0,0,2,17,Employment Based
+I-924A,Annual Certification of Regional Center,0,0,0,1733,2,18,Employment Based
+I-95611,Application for Regional Center Designation,76,0,0,132,2,19,Employment Based
+I-956F,Application for Approval of Investment in a Commercial Enterprise,88,60,10,248,2,20,Employment Based
+I-956G,Regional Center Annual Statement,268,0,0,672,2,21,Employment Based
+I-956H,Bona Fides of Person Involved in Regional Center Program,914,0,0,4440,2,22,Employment Based
+I-956K,Registration for Direct and Third-Party Promoters,124,0,0,925,2,23,Employment Based
+I-58912,Application for Asylum and for Withholding of Removal,109320,4723,559,1180010,3,24,Humanitarian
+Legalization13,Legalization/SAW,11,0,0,112,3,25,Humanitarian
+I-730,Refugee/Asylee Relative Petition,6804,2426,192,21938,3,26,Humanitarian
+I-817,Application for Family Unity Benefits,39,0,0,124,3,27,Humanitarian
+I-821,Application for Temporary Protected Status,275180,232775,6190,486418,3,28,Humanitarian
+I-821D,Consideration of Deferred Action for Childhood Arrivals,80260,82697,451,151940,3,29,Humanitarian
+I-87014,Record of Determination/Credible Fear Worksheet,50820,22179,19939,9001,3,30,Humanitarian
+I-88115,App. for Susp. of Deport. or Spec. Rule Cancel. of Removal (Sect. 203 of Public Law 105-100 (NACARA)),56,0,0,747,3,31,Humanitarian
+I-89916,Record of Determination/Reasonable Fear Worksheet,4780,1714,2106,491,3,32,Humanitarian
+I-91417,Application for T Nonimmigrant Status,4566,1499,173,21319,3,33,Humanitarian
+I-91818,Petition for U Nonimmigrant Status,14444,6962,1859,366819,3,34,Humanitarian
+I-929,Petition for Qualifying Family Member of a U-1 Nonimmigrant,270,267,39,2195,3,35,Humanitarian
+I-485,Application to Register Permanent Residence or Adjust Status (Family),117706,96649,11992,536161,4,36,Lawful Permanent Residence
+I-48519,Application to Register Permanent Residence or Adjust Status (Employment),37760,31544,3100,198313,4,37,Lawful Permanent Residence
+I-485,Application to Register Permanent Residence or Adjust Status (Asylum),17971,6658,592,71102,4,38,Lawful Permanent Residence
+I-485,Application to Register Permanent Residence or Adjust Status (Refugee),7569,2900,538,30843,4,39,Lawful Permanent Residence
+I-485,Application to Register Permanent Residence or Adjust Status (Cuban),65124,54597,722,161300,4,40,Lawful Permanent Residence
+I-485,Application to Register Permanent Residence or Adjust Status (Other),9004,7305,916,48785,4,41,Lawful Permanent Residence
+N-336,Req. for a Hearing on a Decision in Natz. Proceedings (Under Sect. 336 of the INA),1193,938,643,3890,5,42,Citizenship and Nationality
+N-40020,Application for Naturalization (Military),3973,3704,441,7323,5,43,Citizenship and Nationality
+N-40020,Application for Naturalization,277909,209491,22145,455661,5,44,Citizenship and Nationality
+N-565,Application for Replacement Naturalization/Citizenship Document,8623,5380,804,16464,5,45,Citizenship and Nationality
+N-60021,Application for Certificate of Citizenship,20067,19921,1494,45119,5,46,Citizenship and Nationality
+N-648,Medical Certification for Disability Exceptions,21628,22194,0,1263,5,47,Citizenship and Nationality
+I-90,Application to Replace Permanent Resident Card,211483,227924,11888,378794,6,48,Other
+I-102,Application for Replacement/Initial Nonimmigrant Arrival-Departure Document,929,1101,438,1303,6,49,Other
+I-131,Application for Travel Document,18177,18489,2645,81606,6,50,Other
+I-131,Application for Travel Document (Advance Parole),157205,98425,26728,455510,6,51,Other
+I-131,Application for Travel Document (Parole-in-Place),4143,3130,437,8419,6,52,Other
+I-13122,Application for Travel Document (Humanitarian Parole),3371,339,308,2675,6,53,Other
+I-193,Application for Waiver of Passport and/or Visa,0,0,0,316,6,54,Other
+I-360,"Petition for Amerasian, Widow(er), or Special Immigrant",32986,23839,1467,148538,6,55,Other
+I-539,Application To Extend/Change Nonimmigrant Status,61747,57773,6522,58219,6,56,Other
+I-824,Application for Action on an Approved Application or Petition,9593,8237,722,36217,6,57,Other
+Waivers23,Waivers,27849,12896,2754,346494,6,58,Other
+I-290B,Notice of Appeal or Motion,8437,4816,4927,22344,6,59,Other
