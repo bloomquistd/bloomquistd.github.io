@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+  <title>Pending Forms by Quarter</title>
+  <script src="../d3.v7.min.js"></script>
+  <script src="../d3-annotation.min.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div style="margin: 20px;">
+      <button onclick="location.href='../index.html'">Intro</button>
+      <button onclick="location.href='slide1.html'">Slide 1</button>
+      <button onclick="location.href='slide2.html'">Slide 2</button>
+      <button onclick="location.href='slide3.html'" id="selected">Slide 3</button>
+      <button onclick="location.href='slide4.html'">Slide 4</button>
+      <button onclick="location.href='slide5.html'">Slide 5</button>
+      <button onclick="location.href='conclusion.html'">Conclusion</button>
+  </div>
+  <svg width="960" height="500"></svg>
+  <div class="tooltip" style="opacity: 0;"></div>
+
+   <script src="../slide3.js"></script> 
+    <div style="margin: 20px;">
+    <p>
+      To be considered "completed," an immigration form is categorized in a status of approved or denied. Otherwise, it has a status of pending.<br>
+      We can see an jump in forms with a status of pending. This corroborates the increase in the number of forms received without the <br>
+      corresponding increases in approvals or denials.
+    </p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+    svg {
+      font-family: sans-serif;
+    }
+    .tooltip {
+      position: absolute;
+      background-color: white;
+      border: 1px solid #aaa;
+      padding: 10px;
+      pointer-events: none;
+      font-size: 12px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+    #pending{
+      fill: #9467bd;
+      stroke: white;
+      stroke-width: 1.5px;
+    }
+    #netChange {
+      fill: #ffa500;
+      stroke: white;
+      stroke-width: 1.5px;
+    }
+    #pending:hover {
+      fill: #6b4a9c;
+    }
+    #netChange:hover {
+      fill: #c27f04;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 6px 12px;
+      margin-right: 10px;
+      background-color: #eee;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button#selected {
+      font-size: 14px;
+      padding: 6px 12px;
+      margin-right: 10px;
+      background-color: #929292;
+      border: 1px solid #929292;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ddd;
+    }
+    p {
+      font-size: 16px;
+      padding: 6px 12px; 
+    }
