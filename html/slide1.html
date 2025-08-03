@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GReceived, Approved, Denied by Quarter</title>
+  <title>Received, Approved, Denied by Quarter</title>
   <script src="../d3.v7.min.js"></script>
   <script src="../d3-annotation.min.js"></script>
   <link rel="stylesheet" href="/css/style.css">
@@ -18,15 +18,22 @@
       <button onclick="location.href='slide5.html'">Slide 5</button>
       <button onclick="location.href='conclusion.html'">Conclusion</button>
   </div>
+ <!-- <div style="margin: 20px;">
+    <label for="categoryFilter">Filter by Form Category: </label>
+    <select id="categoryFilter">
+      <option value="All">All Cateogries</option>
+    </select>
+    </div>
+    <br>-->
   <svg width="960" height="500"></svg>
   <div class="tooltip" style="opacity: 0;"></div>
 
   <script src="../slide1.js"></script> 
   <div style="margin: 20px;">
     <p>
-      The above data is reported by the U.S. Citizenship and Immigration Services. Each quarter reports on the data from the previous
-      quarter. I.e.,<br> 
-      Q4 of 2023 reports on forms collected from July 1st, 2023 to September 30th, 2024. <br><br>
+      The above data is reported by the U.S. Citizenship and Immigration Services.<sup><a href="https://www.uscis.gov/tools/reports-and-studies/immigration-and-citizenship-data">[5]</a></sup> 
+      Each quarter reports on the data from the previous
+      quarter. I.e., Q4 of 2023 reports on forms collected from July 1st, 2023 to September 30th, 2024. <br><br>
     
       Forms are organized by categories:                                 
         <ul>

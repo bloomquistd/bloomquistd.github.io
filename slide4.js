@@ -28,20 +28,20 @@ d3.csv("/Data/quarterly_all_forms_2023Q4-2025Q2.csv", d3.autoType).then(data => 
     d.diff = d.received - d.approved - d.denied;
   });
 
-  // Sort by year and quarter
+  
   data.sort((a, b) => {
     const q = qStr => parseInt(qStr.replace("Q", ""));
     return a.year - b.year || q(a.quarter) - q(b.quarter);
   });
 
-  // Aggregate pending totals by label
+  
   const summary = d3.rollups(
     data,
     v => d3.sum(v, d => d.diff),
     d => d.label
   ).map(([label, total]) => ({ label, total }));
 
-  // Tooltip breakdown by label and base_type
+ 
   const tooltipData = {};
   data.forEach(d => {
     if (!tooltipData[d.label]) tooltipData[d.label] = {};
@@ -58,7 +58,7 @@ d3.csv("/Data/quarterly_all_forms_2023Q4-2025Q2.csv", d3.autoType).then(data => 
     .nice()
     .range([height, 0]);
 
-  // X-axis
+
   g.append("g")
     .attr("transform", `translate(0,${height})`)
     .call(d3.axisBottom(x))
@@ -66,10 +66,10 @@ d3.csv("/Data/quarterly_all_forms_2023Q4-2025Q2.csv", d3.autoType).then(data => 
     .attr("transform", "rotate(-30)")
     .style("text-anchor", "end");
 
-  // Y-axis
+  
   g.append("g").call(d3.axisLeft(y));
 
-  // Line path
+  
   const line = d3.line()
     .x(d => x(d.label))
     .y(d => y(d.total));
@@ -81,7 +81,7 @@ d3.csv("/Data/quarterly_all_forms_2023Q4-2025Q2.csv", d3.autoType).then(data => 
     .attr("stroke", "#ffa500")
     .attr("stroke-width", 2);
 
-  // Points
+  
   g.selectAll("circle")
     .data(summary)
     .join("circle")

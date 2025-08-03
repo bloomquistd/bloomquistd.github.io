@@ -19,35 +19,38 @@
         .style("font-size", "16px")
         .style("font-weight", "bold")
         .text("Hover over the chart to see a breakdown by category!");
+    
+
 
     const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
 
     const tooltip = d3.select(".tooltip");
 
     d3.csv("/Data/quarterly_all_forms_2023Q4-2025Q2.csv", d3.autoType).then(data => {
-      // Create a label from year + quarter
+      
       data.forEach(d => {
         d.label = `${d.year} ${d.quarter}`;
       });
 
-      // Sort by year then quarter
+   
       data.sort((a, b) => {
         const getQuarterNum = q => parseInt(q.replace("Q", ""));
         return a.year - b.year || getQuarterNum(a.quarter) - getQuarterNum(b.quarter);
       });
 
-      // Aggregate totals per label (quarter)
+    
       const summary = d3.rollups(
         data,
         v => ({
           received: d3.sum(v, d => d.received),
           approved: d3.sum(v, d => d.approved),
           denied: d3.sum(v, d => d.denied),
+          pending: d3.sum(v, d=> d.pending),
         }),
         d => d.label
       ).map(([label, vals]) => ({ label, ...vals }));
 
-      // Organize tooltip breakdowns
+      
       const tooltipData = {};
       data.forEach(d => {
         const label = d.label;
@@ -109,7 +112,7 @@
             d3.select(this).style("opacity", 1);
           });
 
-      // Add legend
+     
       const legend = svg.append("g")
         .attr("transform", `translate(${width + margin.left - 100},0)`);
 
@@ -124,4 +127,5 @@
           .attr("y", 12)
           .text(key.charAt(0).toUpperCase() + key.slice(1));
       });
+      
     });

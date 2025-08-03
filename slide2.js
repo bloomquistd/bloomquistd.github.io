@@ -27,18 +27,18 @@
     const tooltip = d3.select(".tooltip");
 
     d3.csv("/Data/quarterly_all_forms_2023Q4-2025Q2.csv", d3.autoType).then(data => {
-      // Create a label from year + quarter
+      
       data.forEach(d => {
         d.label = `${d.year} ${d.quarter}`;
       });
 
-      // Sort by year then quarter
+      
       data.sort((a, b) => {
         const getQuarterNum = q => parseInt(q.replace("Q", ""));
         return a.year - b.year || getQuarterNum(a.quarter) - getQuarterNum(b.quarter);
       });
 
-      // Aggregate totals per label (quarter)
+      
       const summary = d3.rollups(
         data,
         v => ({
@@ -49,7 +49,7 @@
         d => d.label
       ).map(([label, vals]) => ({ label, ...vals }));
 
-      // Organize tooltip breakdowns
+      
       const tooltipData = {};
       data.forEach(d => {
         const label = d.label;
@@ -111,7 +111,7 @@
             d3.select(this).style("opacity", 1);
           });
 
-      // Add legend
+      
       const legend = svg.append("g")
         .attr("transform", `translate(${width + margin.left - 100},0)`);
 

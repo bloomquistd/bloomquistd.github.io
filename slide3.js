@@ -26,20 +26,20 @@
         d.label = `${d.year} ${d.quarter}`;
       });
 
-      // Sort by year and quarter
+      
       data.sort((a, b) => {
         const q = qStr => parseInt(qStr.replace("Q", ""));
         return a.year - b.year || q(a.quarter) - q(b.quarter);
       });
 
-      // Aggregate pending totals by label
+      
       const summary = d3.rollups(
         data,
         v => d3.sum(v, d => d.pending),
         d => d.label
       ).map(([label, total]) => ({ label, total }));
 
-      // Tooltip breakdown by label and base_type
+      
       const tooltipData = {};
       data.forEach(d => {
         if (!tooltipData[d.label]) tooltipData[d.label] = {};
@@ -56,7 +56,7 @@
         .nice()
         .range([height, 0]);
 
-      // X-axis
+      
       g.append("g")
         .attr("transform", `translate(0,${height})`)
         .call(d3.axisBottom(x))
@@ -64,10 +64,10 @@
         .attr("transform", "rotate(-30)")
         .style("text-anchor", "end");
 
-      // Y-axis
+      
       g.append("g").call(d3.axisLeft(y));
 
-      // Line path
+     
       const line = d3.line()
         .x(d => x(d.label))
         .y(d => y(d.total));
@@ -79,7 +79,7 @@
         .attr("stroke-width", 2)
         .attr("d", line);
 
-      // Points
+      
       g.selectAll("circle")
         .data(summary)
         .join("circle")
